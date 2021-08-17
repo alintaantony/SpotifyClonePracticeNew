@@ -2,3 +2,12 @@
     font-size: 15px;
 
 }
+.maincontainer .errorMessage{
+    color:red;
+    font-size:15px;
+}
+
+.maincontainer .successMessage{
+    color:green;
+    font-size: 15px;
+}
