@@ -1,6 +1,6 @@
 import stylesForNavbar from "./NavbarHome.module.css";
 import spotifyIcon from "../../Images/spotifyIcon7.jpg";
-
+import {Link} from 'react-router-dom';
 const NavbarHome = () => {
   return (
     <div className={stylesForNavbar.navbarHome}>
@@ -19,10 +19,10 @@ const NavbarHome = () => {
               <a href="https://www.spotify.com/in-en/">Support </a>
             </li>
             <li>
-              <a href="https://www.spotify.com/in-en/">Sign up</a>
+              <Link to="/Registration">Sign up</Link>
             </li>
             <li>
-              <a href="https://www.spotify.com/in-en/">Log in</a>
+              <Link to="/Login">Log in</Link>
             </li>
           </b>
         </nav>
