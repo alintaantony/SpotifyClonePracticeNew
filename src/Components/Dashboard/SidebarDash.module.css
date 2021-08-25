@@ -2,7 +2,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 13%;
+  width: 14%;
   height: 100%;
   overflow: hidden;
   align-items: center;
@@ -10,15 +10,21 @@
   font-size: 40px;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
+.sidebarContainer{
+  height: 1000px;
+}
 .sidebarContainer li {
   display: block;
-  color: white;
+  color:whitesmoke;
   padding: 0;
   text-decoration: none;
   float: none;
   margin:0;
+  /* margin-bottom: 90px; */
+  
 }
 
 .spotifyLogo img {
@@ -37,6 +43,8 @@
   background-color: black;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
 }
 
 .spotifyLogo li {
@@ -57,21 +65,41 @@
     background-color: black;
     color: whitesmoke;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    
+    
 }
 .homeLogo li{
-    float: left;
-  padding:0 5px 0 0;
+  float: left;
+  padding:0px 5px 0px 0px; 
   margin:0;
   font-size: 18px;
+  color: rgb(181, 186, 190);
+  
+  
+
+  
 }
 
+.homeLogo li:hover{
+  color: white;
+  
+
+}
+.homeLogo ul:hover{
+  background-color:rgb(57, 58, 59);
+  height: 10%;
+  width: 100%;
+  border-radius: 10px;
+} 
+
 .homeLogo img{
-    height: 30px;
+  height: 30px;
   width: 50px;
   background-color: #333;
   margin-top: 25px;
   margin-left: 60px;
 }
 .homeLogo li p{
-    margin-top: 30px;
+    margin-top: 30px; 
+    
 }
