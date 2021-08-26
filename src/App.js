@@ -3,13 +3,15 @@ import Homepage from "./Components/Homepage/Homepage";
 import Registration from "./Components/UserAccess/Registration";
 import Login from "./Components/UserAccess/Login";
 import { Route, Routes } from "react-router-dom";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" exact>
-          <Homepage/>
+          {/* <Homepage/>  */}
+          <Dashboard/> 
         </Route>
         <Route path="/Login" exact>
           <Login />

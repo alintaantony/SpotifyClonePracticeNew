@@ -3,9 +3,12 @@ import spotifyIcon from "../../Images/spotifyIcon7.jpg";
 import homeIcon from "../../Images/HomeLogoThree.png";
 import searchIcon from "../../Images/searchIconTwo.png";
 import libraryIcon from "../../Images/libraryLogoOne.png";
+import createplaylistlogo from "../../Images/createplaylistlogo.png";
+import likesonglogo from "../../Images/LikedsongsLogo.png";
 
 const SidebarDash = () => {
   return (
+    
     <div className={stylesForSidenav.sidebarContainer}>
       <ul>
         <li>
@@ -64,8 +67,39 @@ const SidebarDash = () => {
             </ul>
           </div>
         </li>
+        <br/>
+        <li>
+          <div className={stylesForSidenav.homeLogo}>
+            <ul>
+              <li>
+                <img src={createplaylistlogo} alt="Create playlist Logo"></img>
+              </li>
+              <li>
+                <p>
+                  <b>Create Playlist</b>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div className={stylesForSidenav.homeLogo}>
+            <ul>
+              <li>
+                <img src={likesonglogo} alt="Liked song Logo"></img>
+              </li>
+              <li>
+                <p>
+                  <b>Liked Song</b>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </div>
+   
+    
   );
 };
 
