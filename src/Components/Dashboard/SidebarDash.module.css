@@ -14,7 +14,7 @@
 }
 
 .sidebarContainer{
-  height: 1000px;
+  height: 1130px;
 }
 .sidebarContainer li {
   display: block;
@@ -82,6 +82,7 @@
 
 .homeLogo li:hover{
   color: white;
+  cursor: pointer;
   
 
 }
