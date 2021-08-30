@@ -8,16 +8,32 @@
   height: 60px;
   width: 150px;
   text-align: center;
- 
+  
+
   
     
   }
+
   
   
+  .MainContainer {
+    background-color:rgb(36, 37, 37);
+    
+
+  }
+  h1{
+    text-align: left;
+    padding:20px;
+    color: white;
+  }
+
   .HeaderContainer {
     position: relative;
     display: inline-block;
-    margin-left: 1930px;
+    height: fit-content;
+    margin-left: 1834px;
+    
+    
   }
   
   .dropdownContent {
@@ -44,7 +60,35 @@
   .HeaderContainer:hover .dropdownContent {
     display: block;
   }
+
+  
   
   .HeaderContainer:hover .dropdownButton {
-    background-color:rgb(57, 58, 59);
+    background-color:black;
   }
+
+  
+
+  .dropdownButton img{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    
+  }
+
+  .dropdownButton span {
+    float: left;
+    
+  }
+
+  .dropdownButton p{
+    font-size: 18px;
+    margin: 0;
+    padding: 1px;
+    margin-top: 5px;
+    font-weight: bold;
+
+  }
+  
