@@ -1,4 +1,4 @@
-  ul {
+.navbarHome ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,11 +9,10 @@
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
- li {
+.navbarHome li {
   float: left;
 }
-
-  li a {
+.navbarHome li a {
   display: block;
   color: white;
   text-align: center;
@@ -22,11 +21,11 @@
 }
 
 /* Change the link color to #111 (black) on hover */
-  li a:hover {
+.navbarHome li a:hover {
   color: green;
 }
 
-  img {
+.navbarHome img {
   height: 70px;
   width: 90px;
   margin-top: 15px;
@@ -41,7 +40,7 @@
   font-size: 20px;
 }
 
-li Link {
+.homeNavbar li Link {
   display: block;
   color: white;
   text-align: center;
@@ -49,6 +48,6 @@ li Link {
   text-decoration: none;
 }
 
-li Link:hover {
+.homeNavbar li Link:hover {
   color:greenyellow;
 }

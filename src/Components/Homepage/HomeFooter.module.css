@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.container img{
+.container img {
   height: 70px;
   width: 90px;
   margin-top: 15px;
@@ -24,6 +24,32 @@
   background-color: #333;
 }
 
+.mainContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-size: 30px;
+  color: whitesmoke;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainContainer li {
+  float: left;
+}
+.mainContainer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainContainer li a :hover {
+  color: green;
+}
 .container ul {
   list-style-type: none;
   margin-top: 0;
