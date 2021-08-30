@@ -6,7 +6,7 @@ import libraryIcon from "../../Images/libraryLogoOne.png";
 import createplaylistlogo from "../../Images/createplaylistlogo.png";
 import likesonglogo from "../../Images/LikedsongsLogo.png";
 
-const SidebarDash = () => {
+const SidebarDash = (props) => {
   return (
     
     <div className={stylesForSidenav.sidebarContainer}>
@@ -22,6 +22,7 @@ const SidebarDash = () => {
                   <b>Spotify</b>
                 </p>
               </li>
+              
             </ul>
           </div>
         </li>
