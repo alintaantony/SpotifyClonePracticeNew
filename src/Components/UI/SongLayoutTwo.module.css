@@ -1,0 +1,40 @@
+.mainContainer ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(202, 202, 202);
+  color:white;
+  width:300px;
+  height:100px;
+  border-radius:8px;
+}
+
+.mainContainer{
+    margin: 0;
+    padding: 0;
+    width:300px;
+    height:100px;
+}
+
+.mainContainer li{
+    float:left;
+    padding: 0;
+    margin:0;
+}
+.mainContainer img{
+    height : 100px;
+    width : 100px;
+    padding:0;
+    margin:0;
+}
+.mainContainer li h2{
+    margin-top: 32px;
+    margin-left: 30px;
+}
+
+.mainContainer :hover{
+    background-color: rgb(167, 166, 166);
+    cursor: pointer;
+    border-radius: 8px;
+}
