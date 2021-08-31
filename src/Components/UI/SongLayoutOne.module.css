@@ -1,5 +1,5 @@
 .mainContainer{
-    position : fixed;
+    position :relative;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -26,4 +26,5 @@
     background-color: rgb(46, 45, 45);
     cursor: pointer;
     border-radius: 7px;
+    
 }

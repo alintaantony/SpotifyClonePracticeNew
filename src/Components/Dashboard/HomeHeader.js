@@ -18,6 +18,12 @@ const HomeHeader = () => {
       title: "Daily Mix 2",
       description: "Eminem, NF, Yelawolf and more",
     },
+    {
+      id: "3",
+      img: dailyMixIcon,
+      title: "Daily Mix 3",
+      description: "Eminem, NF, Yelawolf and more",
+    },
   ];
 
   const dailyMixlist = dummyList.map((dailyMix) => (
@@ -52,8 +58,9 @@ const HomeHeader = () => {
         </div>
       </div>
       <div className={stylesForHeader.HomeBodyContainer}>
-        <h1>Good Afternoon</h1>
-        <br/>
+        <h1 className={stylesForHeader.HBCH1}>Good Afternoon</h1>
+        <h2 className={stylesForHeader.HBCH2}>Made for you</h2>
+        <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p>
         <ul>{dailyMixlist}</ul>
       </div>
     </div>
