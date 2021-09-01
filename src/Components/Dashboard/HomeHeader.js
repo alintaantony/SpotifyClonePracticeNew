@@ -3,8 +3,13 @@ import stylesForHeader from "./HomeHeader.module.css";
 import UserIcon from "../../Images/UserIcon1.jpg";
 import dailyMixIcon from "../../Images/DailyzMixIconOne.jpg";
 import SongLayoutOne from "../UI/SongLayoutOne";
+import onRepeatOne from "../../Images/onRepeatOne.jpg";
+import repeatRewindIcon from "../../Images/repeatRewindIconOne.jpg";
+import SongLayoutTwo from "../UI/SongLayoutTwo";
+import { Container } from "postcss";
 
 const HomeHeader = () => {
+
   const dummyList = [
     {
       id: "1",
@@ -16,15 +21,35 @@ const HomeHeader = () => {
       id: "2",
       img: dailyMixIcon,
       title: "Daily Mix 2",
-      description: "Eminem, NF, Yelawolf and more",
+      description: "Eminem, Hopsin, Yelawolf and more",
     },
     {
       id: "3",
       img: dailyMixIcon,
       title: "Daily Mix 3",
-      description: "Eminem, NF, Yelawolf and more",
+      description: "Akon, Pitbull, Enrique Iglesias and more",
     },
   ];
+
+  const dummyListForSongs = [
+    {
+      id: "1",
+      img: onRepeatOne,
+      title: "On Repeat",
+      
+    },
+    {
+      id: "2",
+      img: repeatRewindIcon,
+      title: "Repeat Rewind",
+      
+    },
+    
+  ];
+
+  
+
+
 
   const dailyMixlist = dummyList.map((dailyMix) => (
     <li><SongLayoutOne
@@ -35,6 +60,16 @@ const HomeHeader = () => {
       description={dailyMix.description}
     />
     </li>
+  ));
+
+  const dailyMixSongList=dummyListForSongs.map((songMix)=>(
+  <li><SongLayoutTwo 
+    key={songMix.id}
+    src={songMix.img}
+    alt={songMix.title}
+    title={songMix.title}
+  />
+  </li>
   ));
   return (
     <div className={stylesForHeader.MainContainer}>
@@ -58,12 +93,14 @@ const HomeHeader = () => {
         </div>
       </div>
       <div className={stylesForHeader.HomeBodyContainer}>
-        <h1 className={stylesForHeader.HBCH1}>Good Afternoon</h1>
+        <h1 className={stylesForHeader.HBCH1}>Good Afternoon </h1><ul>{dailyMixSongList}</ul>
+       
         <h2 className={stylesForHeader.HBCH2}>Made for you</h2>
-        <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p>
+        <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p> 
         <ul>{dailyMixlist}</ul>
-      </div>
+        </div>
     </div>
+  
   );
 };
 
