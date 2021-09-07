@@ -9,6 +9,7 @@ const Dashboard = () => {
         <div className={stylesForDash.Container}>
           <SidebarDash />
           <HomeDb />
+          
         </div>
 
       </div>
