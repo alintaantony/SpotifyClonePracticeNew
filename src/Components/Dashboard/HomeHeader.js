@@ -10,6 +10,10 @@ import timeCapsuleIcon from "../../Images/timeCapsuleIconOne.jpeg";
 
 const HomeHeader = () => {
 
+  const myDate=new Date();
+  const hrs=myDate.getHours();
+  var greeting;
+
   const dummyList = [
     {
       id: "1",
@@ -53,6 +57,27 @@ const HomeHeader = () => {
     
   ];
 
+  const dummyRecentlyPlayedList=[
+    {
+      id: "1",
+      img: dailyMixIcon,
+      title: "Daily Mix 1",
+      description: "Divine, Atif Aslam, King and more",
+    },
+    {
+      id: "2",
+      img: dailyMixIcon,
+      title: "Daily Mix 2",
+      description: "Eminem, Hopsin, Yelawolf and more",
+    },
+    {
+      id: "3",
+      img: dailyMixIcon,
+      title: "Daily Mix 3",
+      description: "Akon, Pitbull, Enrique Iglesias and more",
+    },
+  ];
+
   
 
 
@@ -77,6 +102,29 @@ const HomeHeader = () => {
   />
   </li>
   ));
+
+  const recentlyPlayedSongs=dummyRecentlyPlayedList.map((recentPlayedSong)=>(
+    <li><SongLayoutOne
+    key={recentPlayedSong.id}
+    src={recentPlayedSong.img}
+    alt={recentPlayedSong.title}
+    title={recentPlayedSong.title}
+    description={recentPlayedSong.description}
+    />
+    </li>
+  ));
+  
+  if(hrs<12){
+    greeting='Good Morning';
+  }
+  else if(hrs>12 && hrs<17){
+    greeting='Good Afternoon';
+  }
+  else{
+    greeting='Good Evening';
+    console.log(greeting);
+  }
+  
   return (
     <div className={stylesForHeader.MainContainer}>
       <div className={stylesForHeader.HeaderContainer}>
@@ -99,12 +147,31 @@ const HomeHeader = () => {
         </div>
       </div>
       <div className={stylesForHeader.HomeBodyContainer}>
-        <h1 className={stylesForHeader.HBCH1}>Good Afternoon </h1><ul>{dailyMixSongList}</ul>
-       
+
+        <h1 className={stylesForHeader.HBCH1}>{greeting} </h1><ul>{dailyMixSongList}</ul>
+        
         <h2 className={stylesForHeader.HBCH2}>Made for you</h2>
         <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p> 
         <ul>{dailyMixlist}</ul>
+        {/* <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/> */}
+        {/* <h2 className={stylesForHeader.HBCH2}>Recently Played </h2>
+        <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p> 
+        <ul>{recentlyPlayedSongs}</ul> */}
+
+
+
+
+
         </div>
+        
     </div>
   
   );
