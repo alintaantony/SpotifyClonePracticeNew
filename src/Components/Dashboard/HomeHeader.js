@@ -6,7 +6,7 @@ import SongLayoutOne from "../UI/SongLayoutOne";
 import onRepeatOne from "../../Images/onRepeatOne.jpg";
 import repeatRewindIcon from "../../Images/repeatRewindIconOne.jpg";
 import SongLayoutTwo from "../UI/SongLayoutTwo";
-import { Container } from "postcss";
+import timeCapsuleIcon from "../../Images/timeCapsuleIconOne.jpeg";
 
 const HomeHeader = () => {
 
@@ -42,6 +42,12 @@ const HomeHeader = () => {
       id: "2",
       img: repeatRewindIcon,
       title: "Repeat Rewind",
+      
+    },
+    {
+      id: "3",
+      img: timeCapsuleIcon,
+      title: "Your Time Capsule",
       
     },
     

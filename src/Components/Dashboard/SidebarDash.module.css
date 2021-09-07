@@ -70,7 +70,7 @@
 }
 .homeLogo li{
   float: left;
-  padding:0px 5px 0px 0px; 
+  padding:0px 20px 0px 0px; 
   margin:0;
   font-size: 18px;
   color: rgb(181, 186, 190);
@@ -81,24 +81,24 @@
 }
 
 .homeLogo li:hover{
-  color: white;
+  color: green;
   cursor: pointer;
   
 
 }
-.homeLogo ul:hover{
+/* .homeLogo ul:hover{
   background-color:rgb(57, 58, 59);
   height: 10%;
   width: 100%;
   border-radius: 10px;
-} 
+}  */
 
 .homeLogo img{
   height: 30px;
   width: 50px;
   background-color: #333;
   margin-top: 25px;
-  margin-left: 60px;
+  margin-left: 45px;
 }
 .homeLogo li p{
     margin-top: 30px; 

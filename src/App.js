@@ -4,6 +4,7 @@ import Registration from "./Components/UserAccess/Registration";
 import Login from "./Components/UserAccess/Login";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import DbHomeFooter from "./Components/Dashboard/DbHomeFooter";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" exact>
           {/* <Homepage/>  */}
-          <Dashboard/> 
+          {/* <Dashboard/>  */}
+          <DbHomeFooter/>
 
         </Route>
         <Route path="/Login" exact>
