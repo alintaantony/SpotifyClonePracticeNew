@@ -10,22 +10,19 @@
   font-size: 40px;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
-.sidebarContainer{
+.sidebarContainer {
   height: 1130px;
-  
 }
 .sidebarContainer li {
   display: block;
-  color:whitesmoke;
+  color: whitesmoke;
   padding: 0;
   text-decoration: none;
   float: none;
-  margin:0;
+  margin: 0;
   /* margin-bottom: 90px; */
-  
 }
 
 .spotifyLogo img {
@@ -44,65 +41,118 @@
   background-color: black;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-
 }
 
 .spotifyLogo li {
   float: left;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   font-size: 25px;
 }
-.spotifyLogo li p{
-    margin-top: 50px;
+.spotifyLogo li p {
+  margin-top: 50px;
 }
-.homeLogo ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: fit-content;
-    background-color: black;
-    color: whitesmoke;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    
-    
+.homeLogo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: fit-content;
+  background-color: black;
+  color: whitesmoke;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
-.homeLogo li{
+
+.heartMainContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: fit-content;
+  background-color: black;
+  color: whitesmoke;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.homeLogo li {
   float: left;
-  padding:0px 20px 0px 0px; 
-  margin:0;
-  font-size: 18px;
+  padding: 0px 20px 0px 0px;
+  margin: 0;
+  font-size: 20px;
   color: rgb(181, 186, 190);
-  
-  
-
-  
 }
 
-.homeLogo li:hover{
-  color: green;
+.heartMainContainer li {
+  float: left;
+  padding: 0px 20px 0px 0px;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(181, 186, 190);
+}
+
+.homeLogo li:hover {
   cursor: pointer;
-  
-
 }
-/* .homeLogo ul:hover{
-  background-color:rgb(57, 58, 59);
+.heartMainContainer li:hover {
+  cursor: pointer;
+}
+.homeLogo ul:hover {
+  background-color: rgb(57, 58, 59);
   height: 10%;
   width: 100%;
   border-radius: 10px;
-}  */
+}
 
-.homeLogo img{
-  height: 30px;
-  width: 50px;
-  background-color: #333;
+.heartMainContainer ul:hover {
+  background-color: rgb(57, 58, 59);
+  height: 10%;
+  width: 100%;
+  border-radius: 10px;
+  color:white;
+}
+
+.homeLogo .img {
+  height: 45px;
+  width: 45px;
   margin-top: 25px;
   margin-left: 45px;
 }
-.homeLogo li p{
-    margin-top: 30px; 
-    
+
+.heartMainContainer .img {
+  height: 45px;
+  width: 45px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+.homeLogo li p {
+  margin-top: 33px;
+}
+.heartMainContainer li p {
+  margin-top: 33px;
 }
 
+.heartMainContainer .heartLogo {
+  height: 30px;
+  width: 30px;
+  margin-top: 25px;
+  margin-left: 45px;
+  color: grey;
+  transform: translate(-37px, -15px);
+}
+
+.heartMainContainer .heartContainer {
+  height: 47px;
+  width: 47px;
+  background-color: rgb(57, 57, 134);
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 42px;
+}
+
+.homeLogo .createPlaylistLogo {
+  height: 40px;
+  width: 40px;
+  color: black;
+  margin-top: 25px;
+  margin-left: 45px;
+  background-color: darkgrey;
+}
