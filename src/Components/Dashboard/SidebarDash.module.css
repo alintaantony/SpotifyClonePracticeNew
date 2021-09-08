@@ -135,14 +135,14 @@
   width: 30px;
   margin-top: 25px;
   margin-left: 45px;
-  color: grey;
+  color: rgb(126, 126, 126);
   transform: translate(-37px, -15px);
 }
 
 .heartMainContainer .heartContainer {
   height: 47px;
   width: 47px;
-  background-color: rgb(57, 57, 134);
+  background: linear-gradient(156deg, #4640a2 0%, #4646ac 35%, #f9f9f9 100%);
   align-items: center;
   margin-top: 22px;
   margin-left: 42px;
