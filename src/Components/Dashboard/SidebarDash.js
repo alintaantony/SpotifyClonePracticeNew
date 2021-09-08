@@ -1,15 +1,10 @@
 import stylesForSidenav from "./SidebarDash.module.css";
 import spotifyIcon from "../../Images/spotifyIcon7.jpg";
-import homeIcon from "../../Images/HomeLogoThree.png";
-import searchIcon from "../../Images/searchIconTwo.png";
-import libraryIcon from "../../Images/libraryLogoOne.png";
-import createplaylistlogo from "../../Images/createplaylistlogo.png";
-import likesonglogo from "../../Images/LikedsongsLogo.png";
 import { VscHome } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
 import { VscLibrary } from "react-icons/vsc";
-import {AiOutlinePlus} from "react-icons/ai";
-import {AiFillHeart} from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 
 const SidebarDash = (props) => {
   return (
@@ -49,7 +44,7 @@ const SidebarDash = (props) => {
             <ul>
               <li>
                 {/* <img src={searchIcon} alt="Search Logo"></img> */}
-                <FiSearch className={stylesForSidenav.img}/>
+                <FiSearch className={stylesForSidenav.img} />
               </li>
               <li>
                 <p>
@@ -64,7 +59,7 @@ const SidebarDash = (props) => {
             <ul>
               <li>
                 {/* <img src={libraryIcon} alt="Library Logo"></img> */}
-                <VscLibrary className={stylesForSidenav.img}/>
+                <VscLibrary className={stylesForSidenav.img} />
               </li>
               <li>
                 <p>
@@ -80,7 +75,9 @@ const SidebarDash = (props) => {
             <ul>
               <li>
                 {/* <img src={createplaylistlogo} alt="Create playlist Logo"></img> */}
-                <AiOutlinePlus className={stylesForSidenav.createPlaylistLogo} />
+                <AiOutlinePlus
+                  className={stylesForSidenav.createPlaylistLogo}
+                />
               </li>
               <li>
                 <p>
@@ -95,8 +92,8 @@ const SidebarDash = (props) => {
             <ul>
               <li>
                 <div className={stylesForSidenav.heartContainer}>
-                {/* <img src={likesonglogo} alt="Liked song Logo"></img> */}
-                <AiFillHeart className={stylesForSidenav.heartLogo}/>
+                  {/* <img src={likesonglogo} alt="Liked song Logo"></img> */}
+                  <AiFillHeart className={stylesForSidenav.heartLogo} />
                 </div>
               </li>
               <li>
