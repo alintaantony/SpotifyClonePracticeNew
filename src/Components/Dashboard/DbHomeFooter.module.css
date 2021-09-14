@@ -1,10 +1,10 @@
 .musicContainer {
-    width:100%;
+    width:2304px;
     height: 150px;
     background-color:rgb(36, 37, 37);
 }
 
-.musicContainer .playPauseButton{
+.controlsContainer .playPauseButton{
     height:30px;
     width:30px;
     background-color:rgb(36, 37, 37);
@@ -13,28 +13,28 @@
 
 }
 
-.musicContainer .playlogo{
+.controlsContainer .playlogo{
     color:white;
     height:50px;
     width:50px;
     margin: 10px;
 }
 
-.musicContainer .previouslogo{
+.controlsContainer .previouslogo{
     color:white;
     height:50px;
     width:50px;
     margin: 10px;
 
 }
-.musicContainer .shufflelogo{
+.controlsContainer .shufflelogo{
     color:white;
     height:30px;
     width:30px;
     margin: 20px;   
 }
 
-.musicContainer .nextlogo{
+.controlsContainer .nextlogo{
     color:white;
     height:50px;
     width:50px;
@@ -42,6 +42,11 @@
 
 }
 
+.controlsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
  .musicContainer ul{
     list-style-type: none;
     margin: 0;
@@ -53,7 +58,7 @@
     flex-direction: row;
     gap: 30px;
     align-items: flex-start;
-    margin-left: 1000px;
+    /* margin-left: 1000px; */
     margin-bottom: 0;
     
 }
@@ -63,10 +68,14 @@
     margin: 0;
 }
 
+.sideFooterContainer{
+    margin-top: 20px;
+    width:800px;
+}
 .sideFooterContainer img{
-    width: 60px;
-    height: 60px;
-    
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
         
 }
 .sideFooterContainer li{
@@ -74,32 +83,41 @@
     margin: 0;
 }
 
-.sideFooterContainer h4{
+.sideFooterContainer .songTitle{
     margin: 0;
-    margin-left: 0px;
+    padding:0;
+    margin-left: 20px;
+    margin-top: 10px;
+    color:white;
+    text-align: left;
+    font-size: 30px;
 }
-.sideFooterContainer h5{
-    margin: 7px;
+.sideFooterContainer .songArtist{
+    text-align: left;
     padding: 0;
+    margin:0;
+    color:white;
+    margin-left: 20px;
+    font-size: 15px;
 }
 
 .sideFooterContainer ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 800px;
     height: 150px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     gap: 2px;
     align-items: flex-start;
-    margin-left: 1000px;
     
 }
 
-.sideFooterContainer heartlogo{
-    height: 80px;
-    width: 80px;
-    
+.sideFooterContainer .heartlogo{
+    height: 25px;
+    width: 25px;
+    color:white;
+    margin-left:20px;
 }
