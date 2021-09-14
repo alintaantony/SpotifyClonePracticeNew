@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" exact>
           {/* <Homepage/>  */}
-          <Dashboard/> 
-          {/* <DbHomeFooter/> */}
+          {/* <Dashboard/>  */}
+          <DbHomeFooter/>
 
         </Route>
         <Route path="/Login" exact>
