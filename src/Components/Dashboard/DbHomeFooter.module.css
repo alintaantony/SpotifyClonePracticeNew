@@ -10,10 +10,96 @@
     background-color:rgb(36, 37, 37);
     border:none;
     cursor:pointer;
+
 }
 
 .musicContainer .playlogo{
     color:white;
     height:50px;
     width:50px;
-}   
+    margin: 10px;
+}
+
+.musicContainer .previouslogo{
+    color:white;
+    height:50px;
+    width:50px;
+    margin: 10px;
+
+}
+.musicContainer .shufflelogo{
+    color:white;
+    height:30px;
+    width:30px;
+    margin: 20px;   
+}
+
+.musicContainer .nextlogo{
+    color:white;
+    height:50px;
+    width:50px;
+    margin: 10px;
+
+}
+
+ .musicContainer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    margin-left: 1000px;
+    margin-bottom: 0;
+    
+}
+
+.musicContainer li{
+    padding: 0;
+    margin: 0;
+}
+
+.sideFooterContainer img{
+    width: 60px;
+    height: 60px;
+    
+        
+}
+.sideFooterContainer li{
+    padding: 0;
+    margin: 0;
+}
+
+.sideFooterContainer h4{
+    margin: 0;
+    margin-left: 0px;
+}
+.sideFooterContainer h5{
+    margin: 7px;
+    padding: 0;
+}
+
+.sideFooterContainer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: flex-start;
+    margin-left: 1000px;
+    
+}
+
+.sideFooterContainer heartlogo{
+    height: 80px;
+    width: 80px;
+    
+}
