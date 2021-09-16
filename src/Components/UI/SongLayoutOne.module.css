@@ -22,9 +22,29 @@
     margin-top:15px;
 }
 
-.mainContainer :hover{
+.mainContainer :hover {
     background-color: rgb(46, 45, 45);
     cursor: pointer;
     border-radius: 7px;
+   
+}
+
+.imageContainer .playicon{
+    position: absolute;
+    top:150px;
+    left: 150px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     
 }
+
+.imageContainer .playicon:hover{
+    height: 50px;
+    width: 50px;
+    background: rgb(116, 202, 116);
+    
+}
+
+
+

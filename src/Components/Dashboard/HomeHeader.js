@@ -7,13 +7,15 @@ import onRepeatOne from "../../Images/onRepeatOne.jpg";
 import repeatRewindIcon from "../../Images/repeatRewindIconOne.jpg";
 import SongLayoutTwo from "../UI/SongLayoutTwo";
 import timeCapsuleIcon from "../../Images/timeCapsuleIconOne.jpeg";
+import { Scrollbars } from 'react-custom-scrollbars';
+
 
 const HomeHeader = () => {
 
   const myDate=new Date();
   const hrs=myDate.getHours();
   var greeting;
-
+  console.log(hrs);
   const dummyList = [
     {
       id: "1",
@@ -33,6 +35,7 @@ const HomeHeader = () => {
       title: "Daily Mix 3",
       description: "Akon, Pitbull, Enrique Iglesias and more",
     },
+    
   ];
 
   const dummyListForSongs = [
@@ -84,7 +87,7 @@ const HomeHeader = () => {
 
   const dailyMixlist = dummyList.map((dailyMix) => (
     <li><SongLayoutOne
-        key={dailyMix.id}
+      key={dailyMix.id}
       src={dailyMix.img}
       alt={dailyMix.title}
       title={dailyMix.title}
@@ -122,10 +125,13 @@ const HomeHeader = () => {
   }
   else{
     greeting='Good Evening';
-    console.log(greeting);
   }
+
+  
   
   return (
+    // <Scrollbars style={{height:500}}>
+
     <div className={stylesForHeader.MainContainer}>
       <div className={stylesForHeader.HeaderContainer}>
         <button className={stylesForHeader.dropdownButton}>
@@ -133,7 +139,7 @@ const HomeHeader = () => {
             <img src={UserIcon} alt="User Icon image" />
           </span>
           <span>
-            <p>Alint</p>
+            <p>Manali</p>
           </span>
         </button>
 
@@ -146,13 +152,18 @@ const HomeHeader = () => {
           </a>
         </div>
       </div>
+      
       <div className={stylesForHeader.HomeBodyContainer}>
-
+      
         <h1 className={stylesForHeader.HBCH1}>{greeting} </h1><ul>{dailyMixSongList}</ul>
         
         <h2 className={stylesForHeader.HBCH2}>Made for you</h2>
         <p className={stylesForHeader.HBCP}>Get better recommendations the more you listen.</p> 
         <ul>{dailyMixlist}</ul>
+
+        
+        
+        
         {/* <br/>
         <br/>
         <br/>
@@ -173,7 +184,7 @@ const HomeHeader = () => {
         </div>
         
     </div>
-  
+    // </Scrollbars>
   );
 };
 
