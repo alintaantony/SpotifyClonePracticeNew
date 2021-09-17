@@ -1,4 +1,4 @@
-import stylesForSLO from "./SongLayoutOne.module.css";
+import stylesForSLO from "./SongLayoutOne.module.scss";
 import {BiPlay} from "react-icons/bi";
 
 const SongLayoutOne = (props) => {

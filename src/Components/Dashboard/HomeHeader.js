@@ -14,8 +14,9 @@ const HomeHeader = () => {
 
   const myDate=new Date();
   const hrs=myDate.getHours();
+  var ampm=hrs>=12?'pm':'am';
   var greeting;
-  console.log(hrs);
+  //console.log(hrs);
   const dummyList = [
     {
       id: "1",
@@ -117,15 +118,17 @@ const HomeHeader = () => {
     </li>
   ));
   
-  if(hrs<12){
+  if(hrs<12 && ampm=='am'){
     greeting='Good Morning';
   }
-  else if(hrs>12 && hrs<17){
+  else if(hrs>12 && hrs<17 && ampm=='pm'){
     greeting='Good Afternoon';
   }
   else{
     greeting='Good Evening';
   }
+
+  //console.log(greeting+ampm);
 
   
   
